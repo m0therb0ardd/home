@@ -1,0 +1,32 @@
+[0.000000] (-) TimerEvent: {}
+[0.000263] (nuturtlebot_msgs) JobQueued: {'identifier': 'nuturtlebot_msgs', 'dependencies': OrderedDict()}
+[0.000338] (numsr_turtlebot) JobQueued: {'identifier': 'numsr_turtlebot', 'dependencies': OrderedDict([('nuturtlebot_msgs', '/ros_ws/install/nuturtlebot_msgs')])}
+[0.000370] (nuturtlebot_msgs) JobStarted: {'identifier': 'nuturtlebot_msgs'}
+[0.008623] (nuturtlebot_msgs) JobProgress: {'identifier': 'nuturtlebot_msgs', 'progress': 'cmake'}
+[0.008831] (nuturtlebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros_ws/src/nuturtlebot_msgs', '-DCMAKE_INSTALL_PREFIX=/ros_ws/install/nuturtlebot_msgs'], 'cwd': '/ros_ws/build/nuturtlebot_msgs', 'env': OrderedDict([('HOSTNAME', 'd12300d0061a'), ('SHLVL', '1'), ('HOME', '/'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('PWD', '/ros_ws/build/nuturtlebot_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.051181] (nuturtlebot_msgs) StdoutLine: {'line': b'-- The C compiler identification is unknown\n'}
+[0.086091] (nuturtlebot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is unknown\n'}
+[0.087215] (nuturtlebot_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:2 (project):\n'}
+[0.087343] (nuturtlebot_msgs) StderrLine: {'line': b'  No CMAKE_C_COMPILER could be found.\n'}
+[0.087397] (nuturtlebot_msgs) StderrLine: {'line': b'\n'}
+[0.087445] (nuturtlebot_msgs) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting either the environment\n'}
+[0.087492] (nuturtlebot_msgs) StderrLine: {'line': b'  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to\n'}
+[0.087651] (nuturtlebot_msgs) StderrLine: {'line': b'  the compiler, or to the compiler name if it is in the PATH.\n'}
+[0.087723] (nuturtlebot_msgs) StderrLine: {'line': b'\n'}
+[0.087774] (nuturtlebot_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.087821] (nuturtlebot_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:2 (project):\n'}
+[0.087867] (nuturtlebot_msgs) StderrLine: {'line': b'  No CMAKE_CXX_COMPILER could be found.\n'}
+[0.087915] (nuturtlebot_msgs) StderrLine: {'line': b'\n'}
+[0.087960] (nuturtlebot_msgs) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting either the environment\n'}
+[0.088006] (nuturtlebot_msgs) StderrLine: {'line': b'  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path\n'}
+[0.088052] (nuturtlebot_msgs) StderrLine: {'line': b'  to the compiler, or to the compiler name if it is in the PATH.\n'}
+[0.088098] (nuturtlebot_msgs) StderrLine: {'line': b'\n'}
+[0.088142] (nuturtlebot_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.088317] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.088381] (nuturtlebot_msgs) StdoutLine: {'line': b'See also "/ros_ws/build/nuturtlebot_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.088431] (nuturtlebot_msgs) StdoutLine: {'line': b'See also "/ros_ws/build/nuturtlebot_msgs/CMakeFiles/CMakeError.log".\n'}
+[0.093934] (nuturtlebot_msgs) CommandEnded: {'returncode': 1}
+[0.099574] (-) TimerEvent: {}
+[0.111962] (nuturtlebot_msgs) JobEnded: {'identifier': 'nuturtlebot_msgs', 'rc': 1}
+[0.122363] (numsr_turtlebot) JobSkipped: {'identifier': 'numsr_turtlebot'}
+[0.122439] (-) EventReactorShutdown: {}

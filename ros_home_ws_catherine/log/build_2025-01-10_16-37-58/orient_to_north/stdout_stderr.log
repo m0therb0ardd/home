@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/orient_to_north/orient_to_north.egg-info/PKG-INFO
+writing dependency_links to ../../build/orient_to_north/orient_to_north.egg-info/dependency_links.txt
+writing entry points to ../../build/orient_to_north/orient_to_north.egg-info/entry_points.txt
+writing requirements to ../../build/orient_to_north/orient_to_north.egg-info/requires.txt
+writing top-level names to ../../build/orient_to_north/orient_to_north.egg-info/top_level.txt
+reading manifest file '../../build/orient_to_north/orient_to_north.egg-info/SOURCES.txt'
+writing manifest file '../../build/orient_to_north/orient_to_north.egg-info/SOURCES.txt'
+running build
+running build_py
+copying orient_to_north/orient_to_north.py -> /home/catherine-maglione/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+running install
+running install_lib
+copying /home/catherine-maglione/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/orient_to_north.py -> /home/catherine-maglione/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+byte-compiling /home/catherine-maglione/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/orient_to_north.py to orient_to_north.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/catherine-maglione/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/orient_to_north/orient_to_north.egg-info to /home/catherine-maglione/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north-0.0.0-py3.12.egg-info
+running install_scripts
+Installing orient_to_north script to /home/catherine-maglione/ros_home_ws_catherine/install/orient_to_north/lib/orient_to_north
+writing list of installed files to '/home/catherine-maglione/ros_home_ws_catherine/build/orient_to_north/install.log'

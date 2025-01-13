@@ -1,0 +1,23 @@
+[0.010s] Invoking command in '/ros_ws/build/nuturtlebot_msgs': /usr/bin/cmake /ros_ws/src/nuturtlebot_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/nuturtlebot_msgs
+[0.060s] -- The C compiler identification is unknown
+[0.099s] -- The CXX compiler identification is unknown
+[0.101s] [31mCMake Error at CMakeLists.txt:2 (project):
+[0.101s]   No CMAKE_C_COMPILER could be found.
+[0.101s] 
+[0.101s]   Tell CMake where to find the compiler by setting either the environment
+[0.101s]   variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
+[0.101s]   the compiler, or to the compiler name if it is in the PATH.
+[0.101s] 
+[0.101s] [0m
+[0.102s] [31mCMake Error at CMakeLists.txt:2 (project):
+[0.102s]   No CMAKE_CXX_COMPILER could be found.
+[0.102s] 
+[0.102s]   Tell CMake where to find the compiler by setting either the environment
+[0.102s]   variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+[0.102s]   to the compiler, or to the compiler name if it is in the PATH.
+[0.102s] 
+[0.102s] [0m
+[0.103s] -- Configuring incomplete, errors occurred!
+[0.103s] See also "/ros_ws/build/nuturtlebot_msgs/CMakeFiles/CMakeOutput.log".
+[0.103s] See also "/ros_ws/build/nuturtlebot_msgs/CMakeFiles/CMakeError.log".
+[0.112s] Invoked command in '/ros_ws/build/nuturtlebot_msgs' returned '1': /usr/bin/cmake /ros_ws/src/nuturtlebot_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/nuturtlebot_msgs

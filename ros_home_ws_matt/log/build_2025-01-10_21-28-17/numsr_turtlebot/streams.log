@@ -1,0 +1,25 @@
+[0.065s] Invoking command in '/ros_ws/aarch64_build/numsr_turtlebot': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /ros_ws/aarch64_build/numsr_turtlebot -- -j32 -l32
+[0.164s] [ 33%] [32mBuilding CXX object CMakeFiles/numsr_turtlebot.dir/src/numsr_turtlebot.cpp.o[0m
+[9.137s] [ 66%] [32m[1mLinking CXX executable numsr_turtlebot[0m
+[9.565s] [100%] Built target numsr_turtlebot
+[9.584s] Invoked command in '/ros_ws/aarch64_build/numsr_turtlebot' returned '0': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /ros_ws/aarch64_build/numsr_turtlebot -- -j32 -l32
+[9.632s] Invoking command in '/ros_ws/aarch64_build/numsr_turtlebot': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /ros_ws/aarch64_build/numsr_turtlebot
+[9.642s] -- Install configuration: ""
+[9.643s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot
+[9.649s] -- Set runtime path of "/ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot" to ""
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/package_run_dependencies/numsr_turtlebot
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/parent_prefix_path/numsr_turtlebot
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.sh
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.dsv
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.sh
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.dsv
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.bash
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.sh
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.zsh
+[9.650s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.dsv
+[9.650s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.dsv
+[9.651s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/packages/numsr_turtlebot
+[9.651s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig.cmake
+[9.651s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig-version.cmake
+[9.651s] -- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.xml
+[9.652s] Invoked command in '/ros_ws/aarch64_build/numsr_turtlebot' returned '0': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /ros_ws/aarch64_build/numsr_turtlebot

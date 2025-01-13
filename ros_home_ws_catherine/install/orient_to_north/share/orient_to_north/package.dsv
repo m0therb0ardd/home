@@ -1,0 +1,6 @@
+source;share/orient_to_north/hook/pythonpath.ps1
+source;share/orient_to_north/hook/pythonpath.dsv
+source;share/orient_to_north/hook/pythonpath.sh
+source;share/orient_to_north/hook/ament_prefix_path.ps1
+source;share/orient_to_north/hook/ament_prefix_path.dsv
+source;share/orient_to_north/hook/ament_prefix_path.sh

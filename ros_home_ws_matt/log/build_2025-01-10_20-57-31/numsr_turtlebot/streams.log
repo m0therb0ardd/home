@@ -1,0 +1,66 @@
+[0.067s] Invoking command in '/ros_ws/aarch64_build/numsr_turtlebot': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /ros_ws/src/numsr_turtlebot -DCMAKE_TOOLCHAIN_FILE=/toolchain.cmake -DCMAKE_INSTALL_PREFIX=aarch64_install -DCMAKE_INSTALL_PREFIX=/ros_ws/aarch64_install/numsr_turtlebot
+[0.173s] -- The C compiler identification is GNU 11.4.0
+[0.277s] -- The CXX compiler identification is GNU 11.4.0
+[0.293s] -- Detecting C compiler ABI info
+[0.411s] -- Detecting C compiler ABI info - done
+[0.419s] -- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc - skipped
+[0.419s] -- Detecting C compile features
+[0.420s] -- Detecting C compile features - done
+[0.424s] -- Detecting CXX compiler ABI info
+[0.530s] -- Detecting CXX compiler ABI info - done
+[0.537s] -- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++ - skipped
+[0.538s] -- Detecting CXX compile features
+[0.538s] -- Detecting CXX compile features - done
+[0.542s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.735s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.941s] -- Found dynamixel_sdk: 3.7.40 (/opt/ros/iron/share/dynamixel_sdk/cmake)
+[0.946s] -- Found turtlebot3_msgs: 2.2.1 (/opt/ros/iron/share/turtlebot3_msgs/cmake)
+[0.990s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.000s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.024s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.047s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.357s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[1.457s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.459s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.531s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.556s] -- Found FastRTPS: /opt/ros/iron/include  
+[1.601s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.792s] -- Found nuturtlebot_msgs: 0.0.2 (/ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake)
+[1.824s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.966s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.966s] -- Configured cppcheck include dirs: /ros_ws/src/numsr_turtlebot/include/
+[1.966s] -- Configured cppcheck exclude dirs and/or files: 
+[1.967s] -- Added test 'lint_cmake' to check CMake code style
+[1.969s] -- Added test 'uncrustify' to check C / C++ code style
+[1.969s] -- Configured uncrustify additional arguments: 
+[1.970s] -- Added test 'xmllint' to check XML markup files
+[1.971s] -- Configuring done
+[1.988s] -- Generating done
+[1.990s] -- Build files have been written to: /ros_ws/aarch64_build/numsr_turtlebot
+[1.999s] Invoked command in '/ros_ws/aarch64_build/numsr_turtlebot' returned '0': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /ros_ws/src/numsr_turtlebot -DCMAKE_TOOLCHAIN_FILE=/toolchain.cmake -DCMAKE_INSTALL_PREFIX=aarch64_install -DCMAKE_INSTALL_PREFIX=/ros_ws/aarch64_install/numsr_turtlebot
+[1.999s] Invoking command in '/ros_ws/aarch64_build/numsr_turtlebot': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /ros_ws/aarch64_build/numsr_turtlebot -- -j32 -l32
+[2.070s] [ 33%] [32mBuilding CXX object CMakeFiles/numsr_turtlebot.dir/src/numsr_turtlebot.cpp.o[0m
+[2.070s] [ 66%] [32mBuilding CXX object CMakeFiles/numsr_turtlebot.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[11.052s] [100%] [32m[1mLinking CXX executable numsr_turtlebot[0m
+[11.490s] [100%] Built target numsr_turtlebot
+[11.510s] Invoked command in '/ros_ws/aarch64_build/numsr_turtlebot' returned '0': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /ros_ws/aarch64_build/numsr_turtlebot -- -j32 -l32
+[11.565s] Invoking command in '/ros_ws/aarch64_build/numsr_turtlebot': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /ros_ws/aarch64_build/numsr_turtlebot
+[11.577s] -- Install configuration: ""
+[11.577s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot
+[11.582s] -- Set runtime path of "/ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot" to ""
+[11.583s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/package_run_dependencies/numsr_turtlebot
+[11.583s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/parent_prefix_path/numsr_turtlebot
+[11.583s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.sh
+[11.584s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.dsv
+[11.584s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.sh
+[11.584s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.dsv
+[11.584s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.bash
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.sh
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.zsh
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.dsv
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.dsv
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/packages/numsr_turtlebot
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig.cmake
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig-version.cmake
+[11.585s] -- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.xml
+[11.588s] Invoked command in '/ros_ws/aarch64_build/numsr_turtlebot' returned '0': AMENT_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron LD_LIBRARY_PATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /ros_ws/aarch64_build/numsr_turtlebot

@@ -1,0 +1,2 @@
+Invoking command in '/ros_ws/build/nuturtlebot_msgs': /usr/bin/cmake /ros_ws/src/nuturtlebot_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/nuturtlebot_msgs
+Invoked command in '/ros_ws/build/nuturtlebot_msgs' returned '1': /usr/bin/cmake /ros_ws/src/nuturtlebot_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/nuturtlebot_msgs

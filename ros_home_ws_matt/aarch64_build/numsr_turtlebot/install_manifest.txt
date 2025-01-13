@@ -1,0 +1,16 @@
+/ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot
+/ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/package_run_dependencies/numsr_turtlebot
+/ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/parent_prefix_path/numsr_turtlebot
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.sh
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.dsv
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.sh
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.dsv
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.bash
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.sh
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.zsh
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.dsv
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.dsv
+/ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/packages/numsr_turtlebot
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig.cmake
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig-version.cmake
+/ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.xml
