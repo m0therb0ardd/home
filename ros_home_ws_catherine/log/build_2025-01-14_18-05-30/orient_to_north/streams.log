@@ -1,0 +1,37 @@
+[0.411s] Invoking command in '/home/catherine-maglione/combined_ws/ros_home_ws_catherine/src/orient_to_north': PYTHONPATH=/home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/orient_to_north build --build-base /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build install --record /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/install.log --single-version-externally-managed install_data
+[0.552s] running egg_info
+[0.552s] creating ../../build/orient_to_north/orient_to_north.egg-info
+[0.563s] writing ../../build/orient_to_north/orient_to_north.egg-info/PKG-INFO
+[0.563s] writing dependency_links to ../../build/orient_to_north/orient_to_north.egg-info/dependency_links.txt
+[0.563s] writing entry points to ../../build/orient_to_north/orient_to_north.egg-info/entry_points.txt
+[0.563s] writing requirements to ../../build/orient_to_north/orient_to_north.egg-info/requires.txt
+[0.563s] writing top-level names to ../../build/orient_to_north/orient_to_north.egg-info/top_level.txt
+[0.563s] writing manifest file '../../build/orient_to_north/orient_to_north.egg-info/SOURCES.txt'
+[0.585s] reading manifest file '../../build/orient_to_north/orient_to_north.egg-info/SOURCES.txt'
+[0.586s] writing manifest file '../../build/orient_to_north/orient_to_north.egg-info/SOURCES.txt'
+[0.586s] running build
+[0.586s] running build_py
+[0.586s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build
+[0.586s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib
+[0.586s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+[0.586s] copying orient_to_north/__init__.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+[0.586s] copying orient_to_north/orient_to_north.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+[0.586s] running install
+[0.589s] running install_lib
+[0.600s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+[0.600s] copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/__init__.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+[0.600s] copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/orient_to_north.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+[0.601s] byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/__init__.py to __init__.cpython-312.pyc
+[0.601s] byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/orient_to_north.py to orient_to_north.cpython-312.pyc
+[0.601s] running install_data
+[0.601s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/share/ament_index
+[0.601s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/share/ament_index/resource_index
+[0.601s] creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/share/ament_index/resource_index/packages
+[0.601s] copying resource/orient_to_north -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/share/ament_index/resource_index/packages
+[0.601s] copying package.xml -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/share/orient_to_north
+[0.601s] running install_egg_info
+[0.613s] Copying ../../build/orient_to_north/orient_to_north.egg-info to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north-0.0.0-py3.12.egg-info
+[0.613s] running install_scripts
+[0.683s] Installing orient_to_north script to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/orient_to_north
+[0.683s] writing list of installed files to '/home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/install.log'
+[0.695s] Invoked command in '/home/catherine-maglione/combined_ws/ros_home_ws_catherine/src/orient_to_north' returned '0': PYTHONPATH=/home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/orient_to_north build --build-base /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build install --record /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/install.log --single-version-externally-managed install_data

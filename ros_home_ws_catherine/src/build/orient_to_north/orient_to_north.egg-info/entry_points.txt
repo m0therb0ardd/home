@@ -1,0 +1,2 @@
+[console_scripts]
+orient_to_north = orient_to_north.orient_to_north:main

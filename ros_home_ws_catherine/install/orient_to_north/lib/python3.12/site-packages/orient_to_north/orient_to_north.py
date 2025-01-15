@@ -19,15 +19,18 @@ class OrientToNorthNode(Node):
         self.current_heading = None
 
         self.get_logger().info("OrientToNorthNode initialized. Waiting for sensor data...")
+        #self.last_log_time = self.get_clock().now()
 
     def sensor_callback(self, msg):
-        self.get_logger().info("In sensor callback...")
-
-        # get data from sensor
         mag_x = msg.mag_x
         mag_y = msg.mag_y
-    
-        self.get_logger().info(f"Raw magnetometer data: x={mag_x}, y={mag_y}")
+
+        # Filter: Only process and log if either mag_x or mag_y is non-zero
+        if mag_x == 0 and mag_y == 0:
+            return  # Skip processing if magnetometer values are zero
+
+        self.get_logger().info(f"In sensor callback... Raw data: {msg}")
+        self.get_logger().info(f"Extracted magnetometer data: x={mag_x}, y={mag_y}")
 
         # Calculate the current heading in radians
         heading = math.atan2(mag_y, mag_x)
@@ -42,7 +45,6 @@ class OrientToNorthNode(Node):
 
         # Decide on motion
         self.align_to_north()
-
 
     def align_to_north(self):
         if self.current_heading is None:
