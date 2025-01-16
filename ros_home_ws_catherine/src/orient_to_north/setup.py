@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'orient_to_north = orient_to_north.orient_to_north:main'
+            'orient_to_north = orient_to_north.orient_to_north:main',
+            'move_to_open_space = orient_to_north.move_to_open_space:main',
+            'simple_lidar_test = orient_to_north.simple_lidar_test:main',
         ],
     },
 )

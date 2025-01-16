@@ -9,7 +9,9 @@ setup.py
 ../../build/orient_to_north/orient_to_north.egg-info/top_level.txt
 ../../build/orient_to_north/orient_to_north.egg-info/zip-safe
 orient_to_north/__init__.py
+orient_to_north/move_to_open_space.py
 orient_to_north/orient_to_north.py
+orient_to_north/simple_lidar_test.py
 resource/orient_to_north
 test/test_copyright.py
 test/test_flake8.py

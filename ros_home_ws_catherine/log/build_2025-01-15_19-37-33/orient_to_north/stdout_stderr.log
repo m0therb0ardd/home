@@ -13,13 +13,19 @@ running build_py
 creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build
 creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib
 creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+copying orient_to_north/move_to_open_space.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
+copying orient_to_north/simple_lidar_test.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
 copying orient_to_north/__init__.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
 copying orient_to_north/orient_to_north.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north
 running install
 running install_lib
 creating /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/move_to_open_space.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/simple_lidar_test.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
 copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/__init__.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
 copying /home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/build/lib/orient_to_north/orient_to_north.py -> /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north
+byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/move_to_open_space.py to move_to_open_space.cpython-312.pyc
+byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/simple_lidar_test.py to simple_lidar_test.cpython-312.pyc
 byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/__init__.py to __init__.cpython-312.pyc
 byte-compiling /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north/orient_to_north.py to orient_to_north.cpython-312.pyc
 running install_data
@@ -31,5 +37,7 @@ copying package.xml -> /home/catherine-maglione/combined_ws/ros_home_ws_catherin
 running install_egg_info
 Copying ../../build/orient_to_north/orient_to_north.egg-info to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/python3.12/site-packages/orient_to_north-0.0.0-py3.12.egg-info
 running install_scripts
+Installing move_to_open_space script to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/orient_to_north
 Installing orient_to_north script to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/orient_to_north
+Installing simple_lidar_test script to /home/catherine-maglione/combined_ws/ros_home_ws_catherine/install/orient_to_north/lib/orient_to_north
 writing list of installed files to '/home/catherine-maglione/combined_ws/ros_home_ws_catherine/build/orient_to_north/install.log'
