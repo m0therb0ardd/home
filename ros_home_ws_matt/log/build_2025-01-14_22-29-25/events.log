@@ -1,0 +1,211 @@
+[0.000000] (-) TimerEvent: {}
+[0.000410] (nuturtlebot_msgs) JobQueued: {'identifier': 'nuturtlebot_msgs', 'dependencies': OrderedDict()}
+[0.000601] (numsr_turtlebot) JobQueued: {'identifier': 'numsr_turtlebot', 'dependencies': OrderedDict([('nuturtlebot_msgs', '/ros_ws/aarch64_install/nuturtlebot_msgs')])}
+[0.000635] (nuturtlebot_msgs) JobStarted: {'identifier': 'nuturtlebot_msgs'}
+[0.019816] (nuturtlebot_msgs) JobProgress: {'identifier': 'nuturtlebot_msgs', 'progress': 'cmake'}
+[0.020120] (nuturtlebot_msgs) JobProgress: {'identifier': 'nuturtlebot_msgs', 'progress': 'build'}
+[0.020442] (nuturtlebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/aarch64_build/nuturtlebot_msgs', '--', '-j32', '-l32'], 'cwd': '/ros_ws/aarch64_build/nuturtlebot_msgs', 'env': OrderedDict([('HOSTNAME', 'a384684f0074'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'iron'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/ros_ws/aarch64_build/nuturtlebot_msgs'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.054624] (nuturtlebot_msgs) StdoutLine: {'line': b'[  2%] Built target nuturtlebot_msgs__rosidl_generator_type_description\n'}
+[0.066117] (nuturtlebot_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_nuturtlebot_msgs\n'}
+[0.073859] (nuturtlebot_msgs) StdoutLine: {'line': b'[  4%] Built target nuturtlebot_msgs__cpp\n'}
+[0.075374] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 22%] Built target nuturtlebot_msgs__rosidl_generator_c\n'}
+[0.091254] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 56%] Built target nuturtlebot_msgs__rosidl_typesupport_cpp\n'}
+[0.091402] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 56%] Built target nuturtlebot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.091460] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 59%] Built target nuturtlebot_msgs__rosidl_typesupport_c\n'}
+[0.091513] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 59%] Built target nuturtlebot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.091764] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 68%] Built target nuturtlebot_msgs__rosidl_typesupport_introspection_c\n'}
+[0.092465] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 77%] Built target nuturtlebot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.099672] (-) TimerEvent: {}
+[0.103882] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 77%] Built target nuturtlebot_msgs\n'}
+[0.116335] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 79%] Built target nuturtlebot_msgs__py\n'}
+[0.132245] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 86%] Built target nuturtlebot_msgs__rosidl_generator_py\n'}
+[0.147477] (nuturtlebot_msgs) StdoutLine: {'line': b'[ 90%] Built target nuturtlebot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.148465] (nuturtlebot_msgs) StdoutLine: {'line': b'[100%] Built target nuturtlebot_msgs__rosidl_typesupport_c__pyext\n'}
+[0.148603] (nuturtlebot_msgs) StdoutLine: {'line': b'[100%] Built target nuturtlebot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.199883] (-) TimerEvent: {}
+[0.238255] (nuturtlebot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.238525] (nuturtlebot_msgs) StdoutLine: {'line': b'writing nuturtlebot_msgs.egg-info/PKG-INFO\n'}
+[0.238665] (nuturtlebot_msgs) StdoutLine: {'line': b'writing dependency_links to nuturtlebot_msgs.egg-info/dependency_links.txt\n'}
+[0.238816] (nuturtlebot_msgs) StdoutLine: {'line': b'writing top-level names to nuturtlebot_msgs.egg-info/top_level.txt\n'}
+[0.239721] (nuturtlebot_msgs) StdoutLine: {'line': b"reading manifest file 'nuturtlebot_msgs.egg-info/SOURCES.txt'\n"}
+[0.239990] (nuturtlebot_msgs) StdoutLine: {'line': b"writing manifest file 'nuturtlebot_msgs.egg-info/SOURCES.txt'\n"}
+[0.252008] (nuturtlebot_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_nuturtlebot_msgs_egg\n'}
+[0.258507] (nuturtlebot_msgs) CommandEnded: {'returncode': 0}
+[0.300028] (-) TimerEvent: {}
+[0.363652] (nuturtlebot_msgs) JobProgress: {'identifier': 'nuturtlebot_msgs', 'progress': 'install'}
+[0.370548] (nuturtlebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/aarch64_build/nuturtlebot_msgs'], 'cwd': '/ros_ws/aarch64_build/nuturtlebot_msgs', 'env': OrderedDict([('HOSTNAME', 'a384684f0074'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'iron'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/ros_ws/aarch64_build/nuturtlebot_msgs'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.375132] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.375274] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/ament_index/resource_index/rosidl_interfaces/nuturtlebot_msgs\n'}
+[0.375339] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/SensorData.json\n'}
+[0.375364] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/WheelCommands.json\n'}
+[0.375388] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.375411] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.375433] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.375455] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.375477] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__type_support.c\n'}
+[0.375499] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__struct.h\n'}
+[0.375520] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__description.c\n'}
+[0.375542] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__type_support.c\n'}
+[0.375565] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__functions.c\n'}
+[0.375586] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__functions.h\n'}
+[0.375609] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__functions.h\n'}
+[0.375649] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__description.c\n'}
+[0.375679] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__struct.h\n'}
+[0.375712] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__type_support.h\n'}
+[0.375734] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__type_support.h\n'}
+[0.375756] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__functions.c\n'}
+[0.375777] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/sensor_data.h\n'}
+[0.375798] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/wheel_commands.h\n'}
+[0.375819] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/library_path.sh\n'}
+[0.375873] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/library_path.dsv\n'}
+[0.375896] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_generator_c.so\n'}
+[0.375917] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.375939] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.375959] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.375980] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[0.376001] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.376023] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.376044] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.376064] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.376085] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.376106] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.376126] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__builder.hpp\n'}
+[0.376148] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__traits.hpp\n'}
+[0.376168] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__struct.hpp\n'}
+[0.376189] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__traits.hpp\n'}
+[0.376210] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__struct.hpp\n'}
+[0.376239] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__builder.hpp\n'}
+[0.376260] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/wheel_commands.hpp\n'}
+[0.376282] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/sensor_data.hpp\n'}
+[0.376302] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.376323] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.376342] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.376363] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/dds_fastrtps\n'}
+[0.376401] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.376423] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.376445] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.376467] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.376488] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.376509] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.376529] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.376550] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__type_support.c\n'}
+[0.376571] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__type_support.c\n'}
+[0.376614] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__rosidl_typesupport_introspection_c.h\n'}
+[0.376634] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__rosidl_typesupport_introspection_c.h\n'}
+[0.376654] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.376674] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.376695] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_c.so\n'}
+[0.376716] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs\n'}
+[0.376746] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg\n'}
+[0.376766] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail\n'}
+[0.376788] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__type_support.cpp\n'}
+[0.376809] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.376830] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/wheel_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.376855] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/include/nuturtlebot_msgs/nuturtlebot_msgs/msg/detail/sensor_data__type_support.cpp\n'}
+[0.376878] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.376900] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_typesupport_cpp.so\n'}
+[0.376921] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/pythonpath.sh\n'}
+[0.376942] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/pythonpath.dsv\n'}
+[0.376963] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs-0.0.2-py3.10.egg-info\n'}
+[0.376984] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs-0.0.2-py3.10.egg-info/SOURCES.txt\n'}
+[0.377005] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs-0.0.2-py3.10.egg-info/dependency_links.txt\n'}
+[0.377025] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs-0.0.2-py3.10.egg-info/PKG-INFO\n'}
+[0.377058] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs-0.0.2-py3.10.egg-info/top_level.txt\n'}
+[0.377104] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs\n'}
+[0.377124] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/_nuturtlebot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.377145] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg\n'}
+[0.377165] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/_sensor_data.py\n'}
+[0.377185] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/_wheel_commands_s.c\n'}
+[0.377204] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/_wheel_commands.py\n'}
+[0.377222] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/_sensor_data_s.c\n'}
+[0.377242] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/__init__.py\n'}
+[0.377263] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/libnuturtlebot_msgs__rosidl_generator_py.so\n'}
+[0.377282] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.377302] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/_nuturtlebot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.377324] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/__init__.py\n'}
+[0.377343] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/_nuturtlebot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.377362] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.377382] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.400092] (-) TimerEvent: {}
+[0.413106] (nuturtlebot_msgs) StdoutLine: {'line': b"Listing '/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs'...\n"}
+[0.413219] (nuturtlebot_msgs) StdoutLine: {'line': b"Listing '/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg'...\n"}
+[0.415575] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.415737] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.415774] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/nuturtlebot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.415888] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/lib/libnuturtlebot_msgs__rosidl_generator_py.so\n'}
+[0.415949] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/SensorData.idl\n'}
+[0.415979] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/WheelCommands.idl\n'}
+[0.416008] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/SensorData.msg\n'}
+[0.416031] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/msg/WheelCommands.msg\n'}
+[0.416053] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/ament_index/resource_index/package_run_dependencies/nuturtlebot_msgs\n'}
+[0.416083] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/ament_index/resource_index/parent_prefix_path/nuturtlebot_msgs\n'}
+[0.416199] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/ament_prefix_path.sh\n'}
+[0.416259] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/ament_prefix_path.dsv\n'}
+[0.416303] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/path.sh\n'}
+[0.416328] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/environment/path.dsv\n'}
+[0.416351] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/local_setup.bash\n'}
+[0.416373] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/local_setup.sh\n'}
+[0.416396] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/local_setup.zsh\n'}
+[0.416418] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/local_setup.dsv\n'}
+[0.416440] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/package.dsv\n'}
+[0.416462] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/ament_index/resource_index/packages/nuturtlebot_msgs\n'}
+[0.416484] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_generator_cExport.cmake\n'}
+[0.416506] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.416634] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.416696] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.416724] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.416747] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.416790] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.416812] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.416832] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.416862] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.416883] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.416904] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.416925] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.416945] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.416966] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.416986] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.417005] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/export_nuturtlebot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.417024] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.417044] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.417063] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.417082] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.417101] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.417120] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.417140] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.417159] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgsConfig.cmake\n'}
+[0.417178] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/cmake/nuturtlebot_msgsConfig-version.cmake\n'}
+[0.417197] (nuturtlebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/nuturtlebot_msgs/share/nuturtlebot_msgs/package.xml\n'}
+[0.418463] (nuturtlebot_msgs) CommandEnded: {'returncode': 0}
+[0.500199] (-) TimerEvent: {}
+[0.558887] (nuturtlebot_msgs) JobEnded: {'identifier': 'nuturtlebot_msgs', 'rc': 0}
+[0.559085] (numsr_turtlebot) JobStarted: {'identifier': 'numsr_turtlebot'}
+[0.580145] (numsr_turtlebot) JobProgress: {'identifier': 'numsr_turtlebot', 'progress': 'cmake'}
+[0.580827] (numsr_turtlebot) JobProgress: {'identifier': 'numsr_turtlebot', 'progress': 'build'}
+[0.580890] (numsr_turtlebot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros_ws/aarch64_build/numsr_turtlebot', '--', '-j32', '-l32'], 'cwd': '/ros_ws/aarch64_build/numsr_turtlebot', 'env': OrderedDict([('HOSTNAME', 'a384684f0074'), ('LD_LIBRARY_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'iron'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/ros_ws/aarch64_build/numsr_turtlebot'), ('PYTHONPATH', '/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron')]), 'shell': False}
+[0.600376] (-) TimerEvent: {}
+[0.622031] (numsr_turtlebot) StdoutLine: {'line': b'[100%] Built target numsr_turtlebot\n'}
+[0.631182] (numsr_turtlebot) CommandEnded: {'returncode': 0}
+[0.651682] (numsr_turtlebot) JobProgress: {'identifier': 'numsr_turtlebot', 'progress': 'install'}
+[0.652409] (numsr_turtlebot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros_ws/aarch64_build/numsr_turtlebot'], 'cwd': '/ros_ws/aarch64_build/numsr_turtlebot', 'env': OrderedDict([('HOSTNAME', 'a384684f0074'), ('LD_LIBRARY_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'iron'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('PWD', '/ros_ws/aarch64_build/numsr_turtlebot'), ('PYTHONPATH', '/ros_ws/aarch64_install/nuturtlebot_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ros_ws/aarch64_install/nuturtlebot_msgs:/opt/ros/iron')]), 'shell': False}
+[0.658090] (numsr_turtlebot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.658315] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/lib/numsr_turtlebot/numsr_turtlebot\n'}
+[0.658378] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/package_run_dependencies/numsr_turtlebot\n'}
+[0.658405] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/parent_prefix_path/numsr_turtlebot\n'}
+[0.658629] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.sh\n'}
+[0.658706] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/ament_prefix_path.dsv\n'}
+[0.658734] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.sh\n'}
+[0.658757] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/environment/path.dsv\n'}
+[0.658778] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.bash\n'}
+[0.658816] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.sh\n'}
+[0.658836] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.zsh\n'}
+[0.658864] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/local_setup.dsv\n'}
+[0.658884] (numsr_turtlebot) StdoutLine: {'line': b'-- Installing: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.dsv\n'}
+[0.658904] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/ament_index/resource_index/packages/numsr_turtlebot\n'}
+[0.658923] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig.cmake\n'}
+[0.658943] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/cmake/numsr_turtlebotConfig-version.cmake\n'}
+[0.658963] (numsr_turtlebot) StdoutLine: {'line': b'-- Up-to-date: /ros_ws/aarch64_install/numsr_turtlebot/share/numsr_turtlebot/package.xml\n'}
+[0.660451] (numsr_turtlebot) CommandEnded: {'returncode': 0}
+[0.700510] (-) TimerEvent: {}
+[0.727441] (numsr_turtlebot) JobEnded: {'identifier': 'numsr_turtlebot', 'rc': 0}
+[0.727700] (-) EventReactorShutdown: {}
