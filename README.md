@@ -46,7 +46,7 @@ The project is structured into the following key stages:
 - Added a magnetic sensor to calculate north orientation.
 - Began programming north orientation using the IMU (in progress).
 
-### Week 2:  
+### Week 2: (January 13, 2025)
 - Improved north orientation functionality.
   - Filtered non-zero values in the `orient_to_north` node for better accuracy.
   - Noted that magnetometer values were inconsistent; identified the need for calibration without interference (e.g., on a non-metallic surface).
@@ -55,3 +55,243 @@ The project is structured into the following key stages:
 - Started implementing and testing LiDAR-based movement towards open spaces.
 - Began exploring path detection for dynamic navigation.
 - Examined the [Light Painting Robot GitHub repository](https://github.com/241abhishek/Light-Painting-Robot/tree/main) for inspiration and technical insights.
+- Added realsense to turtlebot (TEETLE) following these commands: : Manually Build the RealSense SDK From Source 
+sudo apt update
+sudo apt install git cmake build-essential libssl-dev libusb-1.0-0-dev pkg-config
+git clone https://github.com/IntelRealSense/librealsense.git
+cd librealsense
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
+sudo ldconfig
+realsense-viewer
+
+
+
+
+
+
+### Week 3: (January 20, 2025) [shifting to daily updates]
+- NEED TO GET ORIENT TO NORTH TO WORK (SET UP MAGNETOMETER) --> I could use apirl tag but i want it do be dark so no
+- MOVE TOWARDS EMPTY SPACE AND STOP (LIDAR WORKS BUT MAYBE I SHOULD USE REALSENSE CAMERA ISNTEAD)--> ask about camera usage
+- 3D PRINT SOMETHING TO AFFIX REALSENSE CAMERA TO TURTLEBOT
+- ORIENT TOWARDS DANCER (TOWARDS BLUE LIGHT) AND MOVE FORWARD
+
+#### Monday Jan 20 
+ Efforts to Get RealSense Working
+
+Installed and Tested RealSense ROS 2 Package:
+ - Installed realsense2_camera for ROS 2.
+ - Launched the node using:
+
+ros2 launch realsense2_camera rs_launch.py
+
+Checked published topics using:
+
+- ros2 topic list
+
+- Verified active topics like /camera/camera/color/image_raw and /camera/camera/depth/image_rect_raw.
+
+Troubleshooted RealSense Errors:
+
+- Encountered and debugged errors like:
+        xioctl(UVCIOC_CTRL_QUERY) failed (protocol error).
+        Issues with RealSense not being detected by the node.
+- Verified USB device detection with:
+
+lsusb
+
+Verified kernel logs for USB-related issues using:
+
+    dmesg | grep -i usb
+
+Explored UDEV Rules and Permissions:
+
+- Added UDEV rules for RealSense to resolve access permissions.
+    Reloaded UDEV rules:
+
+    sudo udevadm control --reload-rules && sudo udevadm trigger
+
+Lowered Camera Resolution and Frame Rate:
+
+- Attempted to reduce data throughput by customizing RealSense launch parameters:
+
+        ros2 launch realsense2_camera rs_launch.py depth_width:=640 depth_height:=480 depth_fps:=15
+
+- Attempted to Visualize Data in RViz:
+    - Added an Image Display in RViz and set the topic to /camera/camera/color/image_raw.
+        Adjusted QoS settings in RViz to Best Effort.
+
+Efforts to Get USB Camera Working
+
+    Installed ROS USB Camera Packages:
+        Installed and tested v4l2_camera and usb_cam packages:
+
+    sudo apt install ros-iron-v4l2-camera
+    sudo apt install ros-iron-usb-cam
+
+Launched USB Camera Nodes:
+
+    Successfully started the v4l2_camera node on the TurtleBot:
+
+ros2 run v4l2_camera v4l2_camera_node --ros-args -p video_device:=/dev/video0
+
+Verified the camera's device path (/dev/video0) and properties using:
+
+    v4l2-ctl --list-devices
+
+Checked Camera Topics:
+
+    Confirmed the publication of /image_raw and /camera_info topics:
+
+    ros2 topic list
+
+Visualized USB Camera Data in RViz:
+
+    Added an Image Display in RViz with the topic /image_raw.
+    Adjusted QoS settings to Best Effort.
+
+Attempted Debugging with RQt Image Viewer:
+
+    Tested rqt_image_view as an alternative visualization tool:
+
+sudo apt install ros-iron-rqt-image-view
+rqt_image_view
+
+### Plan to Pivot:
+ - camera from above and use yolov8 to identify orientatin of the turtle bot diffferent colored light on each face of the turtlebot. 
+ - for example when white light on turtle bot is aligned with blue dot of dancer stop (turtlebot faces dancer )
+ - RealSense Setup on Your Laptop:
+
+    Use the RealSense camera to capture video streams.
+    Process these streams on your laptop.
+
+- YOLOv8 Object Detection:
+
+    Train or fine-tune YOLOv8 to recognize specific markers (e.g., colored lights on the TurtleBot and a blue dot for the dancer).
+    Use YOLOv8's bounding box output to determine the relative orientation of the TurtleBot.
+
+- Control Logic:
+
+    Implement logic to stop the TurtleBot when its white light aligns with the dancer’s blue dot.
+
+- Communication with TurtleBot:
+
+    Use ROS to send movement commands to the TurtleBot.
+
+
+
+### Tuesday Jan 21
+Sensor Setup:
+
+- Connected the QMC5883L magnetometer to the TurtleBot's Raspberry Pi.
+- Verified the sensor connection using i2cdetect, which confirmed the device is detected at address 0x0D.
+
+Testing Raw Data:
+
+- Ran scripts to fetch raw X, Y, Z data from the sensor.
+- Observed that the raw data changes with rotation, but the values did not align logically with expected cardinal directions.
+
+Initial Heading Calculation:
+
+- Wrote a Python script to calculate heading using math.atan2(y, x) based on raw X, Y data.
+- Observed heading values for north, east, south, and west but found them inconsistent with true cardinal directions.
+
+Magnetic Declination:
+
+- Attempted to incorporate the magnetic declination for your location (4° 7' W, ~-4.1167°).
+- Adjusted heading calculation but still encountered discrepancies.
+
+Calibration Attempts:
+
+- Implemented a calibration step to calculate X and Y offsets based on maximum and minimum raw values during a 360° rotation.
+- Applied offsets to normalize raw data but observed that the heading values remained inaccurate.
+
+Exploration of External Libraries:
+
+- Tried using the py-qmc5883l Python library to simplify sensor interaction.
+ - Installed the library on the TurtleBot and local virtual environment but encountered:
+ - Dependency issues (smbus2 was missing initially).
+- Method issues (get_bearing not available in the library).
+
+Raw Data Observations:
+
+- Verified raw X, Y, Z values for each cardinal direction:
+        North: X: 2080, Y: 4137, Z: 2328
+        East: X: 2092, Y: 4411, Z: 2338
+        South: X: 2137, Y: 2898, Z: 2237
+        West: X: 1963, Y: 2442, Z: 2208
+- Identified minimal changes in X values and significant changes in Y values, suggesting improper alignment, calibration, or interference.
+
+## Reground in Visual Components Momentarily 
+- realsense from above is going to track my dancer and turtlebot
+- teetle will have a differnt colored light for each of four sides to track orientation 
+- dancer will have a head light two arm lights and two leg lights 
+- i can have teetle follow one path head path and then left arm path and then right leg path and layer the videos 
+
+
+### Wednesday Jan 22 
+- Setup YOLO in ROS:
+
+    Installed the ultralytics package and set up a ROS workspace (~/yolo_home) for running YOLO.
+    Built and sourced the workspace to make the YOLO node functional.
+
+- Topic Remapping:
+
+    Adjusted the YOLO node to subscribe to the RealSense image topic by running: ros2 run me495_yolo yolo --ros-args -r /image:=/camera/camera/color/image_raw
+
+- Color Tracking Implementation: 
+    - Modified the YOLO node to detect specific colors (pink, orange, white, green, blue, yellow).
+    -  Used HSV filtering for precise color segmentation.
+   -  Drew bounding boxes and labeled detected colors in the output image.
+
+
+### Thursday Jan 23
+- tracked color from centroid
+- created path of color 
+- trying smoothing path with moving average filter
+- smoothing filters didnt quite work the way i wanted so instead i merged contours --> pushkar says i can do smoothing in waypoint 
+- now i set timer to only create path for only 15 seconds
+-  now lets use b spline algorithm for waypoints
+
+- Tracked Color from Centroid:
+    - Implemented logic to detect a specific color (e.g., yellow) using HSV masks.
+    - Used contours to calculate the centroid of the detected color, which represented the object's position.
+- Created Path of the Color:
+    - Appended the centroid positions to a list to create a path reflecting the movement of the tracked object.
+    - Visualized the path on the image as a green line connecting the centroids.
+
+- Attempted Path Smoothing with Moving Average Filter: 
+    - Tried smoothing the path by averaging the nearest neighbors of each point using a moving average filter.
+    
+    - Found that this caused unwanted merging of points and altered the unique shape of the path.
+
+- Resolved Path Issues by Merging Contours:
+    - Instead of smoothing the path, merged nearby contours to stabilize the centroid calculation.
+    - Pushkar suggested that path smoothing can be handled later during waypoint generation, simplifying the color tracking node.
+
+- Set a Timer for Path Creation:
+    - Limited path recording to 15 seconds using a timer in the color tracking node.
+    Ensured that the node stops appending points to the path after the time limit.
+
+- Started Using B-Spline Algorithm for Waypoints:
+    - Decided to smooth the path and generate waypoints using a B-spline algorithm in the waypoint generation node.
+
+
+
+
+### Thursday Jan 24 
+- waypoints working with b spline 
+- but need to filter out redudnant poitns. when yellow marker is stationary way too many waypoints are generated --> i only want new waypoints for new positions 
+- path stops when yellow moves out of frame 
+
+- need to put 15 second timer back in i took it out for testing 
+
+
+- waypoints to turtlebot
+
+### TO DO THIS WEEKEND: 
+- finish waypoitn followign with hust cmd_vel messages to make sure i actually like what it looks like going in circles 
+- transformations from camera to turtlebot for real waypoint sending with nav2 
+- by sunday video of light tracing a path --> send waypoints to turtlebot3 with nav2 --> turtlebot moves in circle
