@@ -281,17 +281,110 @@ Raw Data Observations:
 
 
 
-### Thursday Jan 24 
-- waypoints working with b spline 
-- but need to filter out redudnant poitns. when yellow marker is stationary way too many waypoints are generated --> i only want new waypoints for new positions 
+### Friday Jan 24 
+- Used b spline snf got pretty good waypoint generation 
+- filtered out redundant points --> if the marker was in the same spot too many points were unnecesarrily gernerated 
 - path stops when yellow moves out of frame 
 
-- need to put 15 second timer back in i took it out for testing 
+### Saturday Jan 25
+- Tried to get waypoints to turtlebot 
+- Used cross compilation to try to get waypoints to turtlebot 
+- Used the aarch64 Docker container to cross-compile nuturtlebot_msgs and other packages for the TurtleBot.
+- Transferred the cross-compiled files (aarch64_install) to the TurtleBot and sourced the setup script.
+- Tried running the waypoint_follower node on the TurtleBot but encountered errors related to the missing Python bindings for nuturtlebot_msgs.
 
 
-- waypoints to turtlebot
+## Monday Jan 27 
+- tried to debug msg issue after cross compilation bad day 
+- wasted a lot of time trying ot get waypoints on to turtlebot with cross compilation 
 
-### TO DO THIS WEEKEND: 
-- finish waypoitn followign with hust cmd_vel messages to make sure i actually like what it looks like going in circles 
-- transformations from camera to turtlebot for real waypoint sending with nav2 
-- by sunday video of light tracing a path --> send waypoints to turtlebot3 with nav2 --> turtlebot moves in circle
+## Tuesday Jan 28 
+- tried to debug msg issue again bad day 
+- realized issue was  maybe something about my waypoint followe being python but package being c ++ 
+- spent whole day debugging with alan on discord 
+
+ERROR MESSAGE: 
+
+msr@shredder:~/install$ ls -l ~/install/nuturtlebot_msgs/lib
+total 196
+-rw-r--r-- 1 msr msr 29480 Jan 29 23:16 libnuturtlebot_msgs__rosidl_generator_c.so
+-rw-r--r-- 1 msr msr 22560 Jan 29 23:16 libnuturtlebot_msgs__rosidl_generator_py.so
+-rw-r--r-- 1 msr msr 14784 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_c.so
+-rw-r--r-- 1 msr msr 15616 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_cpp.so
+-rw-r--r-- 1 msr msr 25032 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_fastrtps_c.so
+-rw-r--r-- 1 msr msr 27288 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_fastrtps_cpp.so
+-rw-r--r-- 1 msr msr 16784 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_introspection_c.so
+-rw-r--r-- 1 msr msr 25320 Jan 29 23:16 libnuturtlebot_msgs__rosidl_typesupport_introspection_cpp.so
+drwxr-xr-x 3 msr msr  4096 Jan 29 23:16 python3.10
+msr@shredder:~/install$ source ~/install/setup.bash
+source /opt/ros/iron/setup.bash
+msr@shredder:~/install$ ros2 run me495_yolo waypoint_follower
+Traceback (most recent call last):
+  File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_py/import_type_support_impl.py", line 46, in import_type_support
+    return importlib.import_module(module_name, package=pkg_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'nuturtlebot_msgs.nuturtlebot_msgs_s__rosidl_typesupport_c'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/msr/install/me495_yolo/lib/me495_yolo/waypoint_follower", line 33, in <module>
+    sys.exit(load_entry_point('me495-yolo==0.0.0', 'console_scripts', 'waypoint_follower')())
+  File "/home/msr/install/me495_yolo/lib/python3.10/site-packages/me495_yolo/waypoint_follower.py", line 85, in main
+    node = WaypointFollower()
+  File "/home/msr/install/me495_yolo/lib/python3.10/site-packages/me495_yolo/waypoint_follower.py", line 18, in __init__
+    self.wheel_cmd_publisher = self.create_publisher(WheelCommands, '/wheel_cmd', 10)
+  File "/opt/ros/iron/lib/python3.10/site-packages/rclpy/node.py", line 1486, in create_publisher
+    check_is_valid_msg_type(msg_type)
+  File "/opt/ros/iron/lib/python3.10/site-packages/rclpy/type_support.py", line 35, in check_is_valid_msg_type
+    check_for_type_support(msg_type)
+  File "/opt/ros/iron/lib/python3.10/site-packages/rclpy/type_support.py", line 29, in check_for_type_support
+    msg_or_srv_type.__class__.__import_type_support__()
+  File "/home/msr/install/nuturtlebot_msgs/lib/python3.10/site-packages/nuturtlebot_msgs/msg/_wheel_commands.py", line 36, in __import_type_support__
+    module = import_type_support('nuturtlebot_msgs')
+  File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_py/import_type_support_impl.py", line 48, in import_type_support
+    raise UnsupportedTypeSupport(pkg_name)
+rosidl_generator_py.import_type_support_impl.UnsupportedTypeSupport: Could not import 'rosidl_typesupport_c' for package 'nuturtlebot_msgs'
+[ros2run]: Process exited with failure 1
+msr@shredder:~/install$ ros2 pkg list | grep nuturtlebot_msgs
+nuturtlebot_msgs
+
+Library exists: libnuturtlebot_msgs__rosidl_typesupport_c.so is present.
+- ROS package recognized: ros2 pkg list | grep nuturtlebot_msgs finds it.
+- Python import works: python3 -c "import nuturtlebot_msgs" runs without error.
+- Correct architecture: file ... confirms ARM aarch64.
+
+So why does ROS2 still say "Could not import 'rosidl_typesupport_c' for package 'nuturtlebot_msgs'"?
+
+## Wednesday Jan 29 
+- better day 
+- set ros ID to same for turtlebot and local so i could run waypoint_follower locally
+- deciding to only run things locally 
+- was using wheel cmd commands to get general shape to see how turtle moved 
+
+## Thursday Jan 30 
+- NEED TO PUT COLOR ON TURTLEBOT SO I CAN GET FRAMES AND TELL TURLTEBOT WHERE TO GO 
+- day off
+
+## Friday Jan 31
+- transformations set up for camera to turtlebot and camera to dancer
+- nowp finishing gettign waypoints in turtle frame 
+
+- add scaling to figure out --> use z for scaling for field of view 
+- use z to reconstruct 
+- pick displacement if i want it to scale 
+
+
+- scale with referenfe --> fidn center of trajectory -> scaling them move turtlebot so one point on traj corr with turtlebot 
+
+
+
+## Saturday Feb 1 
+- tried to get frames 
+
+## Sunday Feb 2 
+- 
