@@ -295,8 +295,9 @@ Raw Data Observations:
 
 
 ## Monday Jan 27 
-- tried to debug msg issue after cross compilation bad day 
-- wasted a lot of time trying ot get waypoints on to turtlebot with cross compilation 
+- continued debugging the message import issue, making little progress early in the day.
+- Realized the issue might stem from a mismatch between the Python-based waypoint follower and the C++-based package dependencies.
+- Spent the entire day troubleshooting with Alan on Discord, diagnosing the root cause of the problem. 
 
 ## Tuesday Jan 28 
 - tried to debug msg issue again bad day 
@@ -362,29 +363,44 @@ So why does ROS2 still say "Could not import 'rosidl_typesupport_c' for package 
 
 ## Wednesday Jan 29 
 - better day 
-- set ros ID to same for turtlebot and local so i could run waypoint_follower locally
-- deciding to only run things locally 
-- was using wheel cmd commands to get general shape to see how turtle moved 
+- Made significant progress by setting the ROS domain ID to match between the TurtleBot and the local machine, allowing the waypoint_follower to run successfully.
+- Decided to shift all processing to local execution instead of running it on the TurtleBot directly.
+- Used wheel_cmd commands to approximate the TurtleBot’s movement and visualize the general shape of its trajectory.
 
 ## Thursday Jan 30 
-- NEED TO PUT COLOR ON TURTLEBOT SO I CAN GET FRAMES AND TELL TURLTEBOT WHERE TO GO 
+- Key realization: The TurtleBot needs a colored marker for accurate frame tracking and navigation.
 - day off
 
 ## Friday Jan 31
+- Successfully set up TF transformations from the camera to the TurtleBot and from the camera to the dancer.
+- Began finalizing waypoint generation in the TurtleBot's frame.
+- Explored scaling transformations using the Z-depth value to account for the camera’s field of view.
+- Investigated how to use Z-depth for reconstruction and determine appropriate displacement scaling.
+- Considered using a reference-based scaling approach, aligning the center of the trajectory with the TurtleBot’s movement.
+
+NOTES FROM CHECK IN
 - transformations set up for camera to turtlebot and camera to dancer
 - nowp finishing gettign waypoints in turtle frame 
-
 - add scaling to figure out --> use z for scaling for field of view 
 - use z to reconstruct 
-- pick displacement if i want it to scale 
-
-
+- pick displacement if i want it to scale
 - scale with referenfe --> fidn center of trajectory -> scaling them move turtlebot so one point on traj corr with turtlebot 
 
 
 
 ## Saturday Feb 1 
-- tried to get frames 
-
+- Attempted to ensure all frames were properly detected and tracked, but ... 
+-Issue: Waypoints were not appearing when echoing /waypoints.
+-Suspected cause: TF transformations were not consistently available, leading to failures when transforming waypoints into the TurtleBot’s frame.
 ## Sunday Feb 2 
-- 
+- Confirmed that /path_points is correctly publishing X, Y, Z coordinates in the camera frame.
+- Verified that TF transformations exist between camera_color_optical_frame and turtlebot_base, but still encountered errors.
+Persistent issue:
+
+- When running ros2 topic echo /waypoints, the topic remains empty.
+    Running ros2 run me495_yolo waypoint outputs transformed waypoints, but they are not being published.
+    Encountered "lookupTransform argument target_frame does not exist" errors, indicating that turtlebot_base might not always be available when the transform is requested.
+
+Possible cause: The dancer’s frame only exists when detected, so if the RealSense camera momentarily loses sight of the pink object, TF transformations fail.
+
+- Next steps: Ensure continuous TF broadcasting for the dancer’s frame, even if temporarily lost. Add better error handling for missing TF lookups instead of skipping waypoints. Confirm that publish_b_spline_path() is actually executing and sending waypoints to /waypoints.
