@@ -404,3 +404,45 @@ Persistent issue:
 Possible cause: The dancer’s frame only exists when detected, so if the RealSense camera momentarily loses sight of the pink object, TF transformations fail.
 
 - Next steps: Ensure continuous TF broadcasting for the dancer’s frame, even if temporarily lost. Add better error handling for missing TF lookups instead of skipping waypoints. Confirm that publish_b_spline_path() is actually executing and sending waypoints to /waypoints.
+
+## Monday Feb 3
+- Still working on getting waypoints. They dont publish or echo but are there 
+
+## Tuesday Feb 4 
+- Debugged waypoint transformation pipeline.
+- Ensured waypoints appeared correctly in RViz.
+- Adjusted TF transformations to properly reference the TurtleBot’s frame.
+- Successfully got /waypoints to publish in the correct frame.
+
+
+## Wednesday Feb 5
+- Worked on making the TurtleBot follow waypoints.
+- Verified /waypoints structure and ensured the follower node was receiving them.
+- Incorporated TurtleBot’s detected position (blue object in YOLO) as a navigation reference.
+- Wrote initial waypoint_follower.py to process and execute waypoints.
+Added a new topic /turtlebot_position to update the TurtleBot’s location from YOLO.
+-Debugged issues with receiving and processing position updates.
+
+## Thursday Feb 6 
+- added missing topic /turtlebot_position
+- Ensured YOLO was correctly publishing the TurtleBot’s coordinates
+- Verified waypoint_follower.py was subscribing to /turtlebot_position correctly.
+Fixed crashes related to missing callback functions.
+- time to send waypoitns to turtlebot!!! lets gooooooo !!!!!!!! 
+
+
+## Week of Feb 10th:
+
+- after two more days of tryign to figure out the rodidl error in matts package I decided to abandon hi spackage and just use turtlebot startup to launch after testing every turtlebot
+
+- sample set up with ladder and got turtlebots moving. confirmed setup for video
+
+- during sample set up the turtlebots were jsut moving in circles 
+
+- to figure out why they were moving in circles I checked all transformations and checked turtlebot position tracking accuracy 
+
+- realized that incorrect orientation is the problem --> used itnernal odom but not accurate enough --> thinking about optitrack, thinking about april tags 
+
+- re pauls recommendation going to add a second color to the front of the turtlebot for orientation to determine yaw angle 
+
+- by using two markers i can comoute the orientation fo the turtlebot relative to the camera --> fidn vector from blue marker to yellow marker (yellow marker will be on the front of turtlebot) --> calculate orientation usign atan2 to determine headign directin --> convert heading direction to turtlrebot frame to use for movement control 
