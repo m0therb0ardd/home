@@ -446,3 +446,10 @@ Fixed crashes related to missing callback functions.
 - re pauls recommendation going to add a second color to the front of the turtlebot for orientation to determine yaw angle 
 
 - by using two markers i can comoute the orientation fo the turtlebot relative to the camera --> fidn vector from blue marker to yellow marker (yellow marker will be on the front of turtlebot) --> calculate orientation usign atan2 to determine headign directin --> convert heading direction to turtlrebot frame to use for movement control 
+
+## Week of Feb 17th:
+
+- Calculated TurtleBot orientation using an orange marker at the front. Tracking shows some success, and the TurtleBot can orient itself at times, but it seems to fail when color detection is inconsistent.
+- Experimented with using AprilTags instead of color detection. The goal was to track the dancer’s position. I can now visualize AprilTags and get position data in RViz, but fully integrating them into my existing code is more time-intensive than expected, so I’ve paused this for now.
+- Ran a sanity check on basic square movement using direct cmd_vel commands.
+- Working on basic square movement using waypoints. Once this is functional, I’ll return to using the pink object for waypoint tracking.
